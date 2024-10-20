@@ -55,7 +55,7 @@ public class CheckOutTest {
             addProducts.checkCart();
             checkOutPage.checkOut();
             checkOutPage.inputInformation("","","");
-            Assert.assertEquals(checkOutPage.inputInvalidInformation(),"Error: First Name is required");
+            Assert.assertEquals(checkOutPage.inputInvalidInformation(),"Error: First Name is required:");
             checkOutPage.finish();
             checkOutPage.backHome();
         }

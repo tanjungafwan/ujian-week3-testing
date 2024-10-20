@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
+import java.time.Duration;
+
 public class CheckOutPage {
 
     private WebDriver driver;
@@ -30,7 +33,7 @@ public class CheckOutPage {
     @FindBy(xpath = "//div[normalize-space()='Payment Information:']")
     private WebElement validInformation;
 
-    @FindBy(xpath = "//*[@id='checkout_info_container']/div/form/div[1]/div[4]")
+    @FindBy(xpath = "//*[@id='checkout_info_container']/div/form/div[1]/div[4]/h3")
     private WebElement invalidInformation;
 
     @FindBy(xpath = "//input[@id='continue']")
